@@ -17,14 +17,17 @@ if function == "Quadratic":
     discriminant=(b**2)-(4*a*c)
     if discriminant == 0:
         print("There is one real root")
-        print(func.roots())
+        for i in func.roots():
+            print("root:",i)
     if discriminant > 0:
         print("There are two real roots")
-        print(func.roots())
+        for i in func.roots():
+            print("root:",i)
     if discriminant < 0:
         value=-discriminant
         print("There are two complex roots")
-        print(func.roots())
+        for i in func.roots():
+            print("root:",i)
 if function == "Cubic":
     print("ax^3+bx^2+cx+d")
     print("Input the value of each variable")
@@ -42,10 +45,13 @@ if function == "Cubic":
     h=((g*g)/4)+((f*f*f)/27)
     if f == 0 and g == 0 and h == 0:
         print("There is one real root and they are all equal")
-        print(func1.roots())
+        for i in func1.roots():
+            print("root:",i)
     if h <= 0 and f != 0 and g != 0:
         print("All three roots are real")
-        print(func1.roots())
+        for i in func1.roots():
+            print("root:",i)
     if h > 0:
         print("Only 1 real root and two complex roots")
-        print(func1.roots())
+        for i in func1.roots():
+            print("root:",i)
