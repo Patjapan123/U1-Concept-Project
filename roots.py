@@ -11,8 +11,8 @@ class Quadratic:
             x=-self.b/(2*self.a)
             return [round(x,5)]
         if discriminant > 0:
-            x=(-self.b+math.sqrt(self.b**2-4*self.a*self.c))/ 2*self.a
-            x1=(-self.b-math.sqrt(self.b**2-4*self.a*self.c))/ 2*self.a
+            x=(-self.b+math.sqrt(self.b**2-4*self.a*self.c))/ (2*self.a)
+            x1=(-self.b-math.sqrt(self.b**2-4*self.a*self.c))/ (2*self.a)
             return [round(x,5),round(x1,5)]
         if discriminant < 0:
             value=-discriminant
